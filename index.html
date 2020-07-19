@@ -23,16 +23,18 @@
     <link rel="stylesheet" href="css/svg-with-js.css" />
   </head>
   <body>
-    <div class="fullscreen-bg">
-      <video
-        loop="true"
-        muted
-        autoplay="true"
-        poster="img/videoframe.jpg"
-        class="fullscreen-bg__video"
-      >
-        <source src="video/bg.mp4" type="video/mp4" />
-      </video>
+    <div class="overlay-video">
+      <div class="fullscreen-bg">
+        <video
+          loop
+          muted
+          autoplay
+          poster="img/videoframe.jpg"
+          class="fullscreen-bg__video"
+        >
+          <source src="video/bg.mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
     <div class="container">
       <div class="spacer"></div>
@@ -83,43 +85,36 @@
           </div>
         </div>
       </div>
-
-      <div class="container fixed-bottom">
-        <div class="row">
-          <div class="col text-primary px-0">
-            <small>STEP 1</small>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col px-0">
-            <div
-              class="step-selector bg-theme p-4 d-flex justify-content-between text-white"
+      <div class="spacer6"></div>
+      <div class="row">
+        <div class="col px-0 align-self-end">
+          <div
+            class="step-selector bg-theme p-4 d-flex justify-content-between text-white"
+          >
+            <button
+              class="step step-previous d-flex align-items-center text-center pointer text-white"
             >
-              <button
-                class="step step-previous d-flex align-items-center text-center pointer text-white"
-              >
-                <i
-                  class="fa fa-arrow-left mr-2 text-primary"
-                  aria-hidden="true"
-                ></i>
-                <span class="Coralwave1"></span>
-                <span class="Coralwave2"></span>
-                <span class="Coralwave3"></span>
-                <a>Previous Question</a>
-              </button>
-              <button
-                class="step step-next d-flex align-items-center text-center pointer position-relative text-white"
-              >
-                <span class="Coralwave1"></span>
-                <span class="Coralwave2"></span>
-                <span class="Coralwave3"></span>
-                <a>Next Question</a>
-                <i
-                  class="fa fa-arrow-right ml-2 text-primary"
-                  aria-hidden="true"
-                ></i>
-              </button>
-            </div>
+              <i
+                class="fa fa-arrow-left mr-2 text-primary"
+                aria-hidden="true"
+              ></i>
+              <span class="Coralwave1"></span>
+              <span class="Coralwave2"></span>
+              <span class="Coralwave3"></span>
+              <a>Previous Question</a>
+            </button>
+            <button
+              class="step step-next d-flex align-items-center text-center pointer position-relative text-white"
+            >
+              <span class="Coralwave1"></span>
+              <span class="Coralwave2"></span>
+              <span class="Coralwave3"></span>
+              <a>Next Question</a>
+              <i
+                class="fa fa-arrow-right ml-2 text-primary"
+                aria-hidden="true"
+              ></i>
+            </button>
           </div>
         </div>
       </div>
