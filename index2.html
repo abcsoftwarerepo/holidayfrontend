@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turkey Vacation App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/solid.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/regular.css" />
+    <link rel="stylesheet" href="css/v4-shims.css" />
+    <link rel="stylesheet" href="css/svg-with-js.css" />
+  </head>
+  <body>
+    <div class="fullscreen-bg">
+      <video
+        loop
+        muted
+        autoplay
+        poster="img/videoframe.jpg"
+        class="fullscreen-bg__video"
+      >
+        <source src="video/bg.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="container">
+      <div class="spacer"></div>
+      <div class="row">
+        <div class="col d-flex justify-content-between">
+          <img class="logo-responsive" src="/img/logodeneme.png" alt="" />
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="row">
+        <div
+          class="col d-flex align-items-center justify-content-end text-white"
+        >
+          <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="container-fluid px-0">
+        <div class="row">
+          <div class="col text-uppercase">
+            <h1>Have you ever been in Turkey ?</h1>
+          </div>
+        </div>
+
+        <div class="row d-flex">
+          <div class="col">
+            <p>
+              Afterwards all of this questions we will try to give you best
+              vacation suggestion.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="spacer6"></div>
+      <div class="container-fluid px-0 text-white">
+        <div class="row">
+          <div class="col-6 pl-0">
+            <div class="option-card bg-theme p-5 pointer">
+              <i class="fa fa-circle-thin" aria-hidden="true"></i>
+              <span>Yes I do.</span>
+            </div>
+          </div>
+          <div class="col-6 pl-0">
+            <div class="option-card bg-theme p-5 pointer">
+              <i class="fa fa-circle-thin" aria-hidden="true"></i>
+              <span>No, I don't.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container fixed-bottom">
+        <div class="row">
+          <div class="col text-primary px-0">
+            <small>STEP 1</small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col px-0">
+            <div
+              class="step-selector bg-theme p-4 d-flex justify-content-between text-white"
+            >
+              <button
+                class="step step-previous d-flex align-items-center text-center pointer text-white"
+              >
+                <i
+                  class="fa fa-arrow-left mr-2 text-primary"
+                  aria-hidden="true"
+                ></i>
+                <span class="Coralwave1"></span>
+                <span class="Coralwave2"></span>
+                <span class="Coralwave3"></span>
+                <a>Previous Question</a>
+              </button>
+              <button
+                class="step step-next d-flex align-items-center text-center pointer position-relative text-white"
+              >
+                <span class="Coralwave1"></span>
+                <span class="Coralwave2"></span>
+                <span class="Coralwave3"></span>
+                <a>Next Question</a>
+                <i
+                  class="fa fa-arrow-right ml-2 text-primary"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+html,
+body {
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+}
+
+.search-input {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.text-theme {
+  color: rgb(250, 190, 37);
+}
+
+.bg-theme {
+  background-color: rgba(33, 36, 41, 0.3);
+}
+.bg-theme:hover {
+  background-color: rgba(33, 36, 41, 0.7);
+}
+.bg-theme:after {
+  content: "";
+  background-color: rgb(250, 190, 37);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4px;
+  position: absolute;
+}
+
+.bg-theme:hover .fa-circle-thin {
+  color: rgb(250, 190, 37);
+}
+
+.bg-theme2 {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.spacer {
+  margin-top: 3.875rem;
+}
+.spacer2 {
+  margin-top: 12.1rem;
+}
+
+.spacer3 {
+  margin-top: 7.4375rem;
+}
+
+.spacer4 {
+  margin-top: 2.6rem;
+}
+
+.spacer5 {
+  margin-top: 4.5rem;
+}
+
+.spacer6 {
+  margin-top: 15.375rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.step-selector:after {
+  content: "";
+  background-color: rgb(250, 190, 37);
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 50%;
+  position: absolute;
+}
+.step-selector::before {
+  content: "";
+  background-color: rgb(250, 190, 37);
+  top: 0;
+  right: 0;
+  height: 8px;
+  width: 50%;
+  position: absolute;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.step {
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  background: rgba(17, 18, 19, 0.2);
+  border: none;
+}
+
+.step:hover {
+  transition: all 1s ease;
+  background: rgba(17, 18, 19, 0.4);
+}
+.step:hover span {
+  top: 0.5em;
+  transition: all 1s ease, top 1.5s ease;
+}
+
+.step span {
+  position: absolute;
+  content: "";
+  top: calc(2em - 0.25px);
+  left: 50%;
+  width: 20em;
+  height: 20em;
+  margin-left: -10em;
+  border-radius: 42.5%;
+  transform-origin: 50% 50%;
+  transition: all 1s ease, top 1.5s ease;
+}
+
+.Coralwave1 {
+  background: #3c11fc;
+  animation: smallwave 3s infinite linear;
+}
+
+.Coralwave2 {
+  background: rgb(5, 81, 168);
+  animation: smallwave 4s infinite linear;
+}
+.Coralwave3 {
+  background: rgb(36, 201, 201);
+  animation: smallwave 5s infinite linear;
+}
+
+@keyframes smallwave {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: rotate(180deg) scale(0.95);
+    opacity: 0.25;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 0.8;
+  }
+}
+
+.logo-responsive {
+  max-width: 85px;
+  max-height: 25px;
+}
