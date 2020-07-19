@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Turkey Vacation Application</title>
+    <title>Turkey Vacation App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -16,110 +20,109 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/regular.css" />
     <link rel="stylesheet" href="css/v4-shims.css" />
-    <link rel="stylesheet" href="css/svg-with-js.css">
+    <link rel="stylesheet" href="css/svg-with-js.css" />
   </head>
   <body>
-    <div class="container d-flex flex-column">
+    <div class="fullscreen-bg">
+      <video
+        loop="true"
+        muted
+        autoplay="true"
+        poster="img/videoframe.jpg"
+        class="fullscreen-bg__video"
+      >
+        <source src="video/bg.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="container">
       <div class="spacer"></div>
       <div class="row">
         <div class="col d-flex justify-content-between">
-          <img src="logo.svg" alt="" />
-          <i class="fa fa-bars text-white"></i>
+          <img class="logo-responsive" src="/img/logodeneme.png" alt="" />
         </div>
       </div>
       <div class="spacer"></div>
-            <div class="row">
+      <div class="row">
         <div
-          class="col text-white d-flex align-items-center justify-content-end"
+          class="col d-flex align-items-center justify-content-end text-white"
         >
           <i class="fa fa-times fa-2x" aria-hidden="true"></i>
         </div>
       </div>
-   <div class="spacer"></div>
-      <div class="container-fluid px-0 text-white">
-                <div class="row">
-          <div class="col">
-            <h1>Add Sequence</h1>
+      <div class="spacer"></div>
+      <div class="container-fluid px-0">
+        <div class="row">
+          <div class="col text-uppercase">
+            <h1>Have you ever been in Turkey ?</h1>
           </div>
         </div>
+
         <div class="row d-flex">
-          <div class="col-3">
-            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-            <a>From New Activity</a>
-          </div>
-          <div class="col-3">
-           <i class="fa fa-circle-thin" aria-hidden="true"></i>
-            <a>From Existing Activity</a>
-          </div>
-          <div class="col d-flex justify-content-end align-items-center">
-            <i class="fa fa-search mr-1" aria-hidden="true"></i>
-            <input class="search-input w-25" placeholder="Search"></input>
+          <div class="col">
+            <p>
+              Afterwards all of this questions we will try to give you best
+              vacation suggestion.
+            </p>
           </div>
         </div>
       </div>
-      <div class="spacer3"></div>
+      <div class="spacer6"></div>
       <div class="container-fluid px-0 text-white">
-         <div class="row d-flex ">
-          <div class="col-md-6 pl-0 mb-2">
-            <div class="option-card bg-theme p-4  pointer">
-              <i class="fa fa-play-circle" aria-hidden="true"></i>
-              <span>Free Iphone Games</span>
-            </div>   
-          </div>
-          <div class="col-md-6 pl-0 mb-2">
-            <div class="option-card bg-theme p-4  pointer">
-                <i class="fa fa-comments" aria-hidden="true"></i>
-              <span>Toner Cartridge</span>
+        <div class="row">
+          <div class="col-6 pl-0">
+            <div class="option-card bg-theme p-5 pointer">
+              <i class="fa fa-circle-thin" aria-hidden="true"></i>
+              <span>Yes I do.</span>
             </div>
           </div>
-        </div>
-         <div class="row d-flex ">
-          <div class="col-md-6 pl-0 mt-2">
-            <div class="option-card bg-theme p-4 pointer">
-              <i class="fa fa-play-circle" aria-hidden="true"></i>
-              <span>Free Iphone Games</span>
-            </div>   
-          </div>
-          <div class="col-md-6 pl-0 mt-2">
-            <div class="option-card bg-theme p-4 pointer">
-                <i class="fa fa-comments" aria-hidden="true"></i>
-              <span>Toner Cartridge</span>
+          <div class="col-6 pl-0">
+            <div class="option-card bg-theme p-5 pointer">
+              <i class="fa fa-circle-thin" aria-hidden="true"></i>
+              <span>No, I don't.</span>
             </div>
           </div>
-        </div>
- 
-<div class="spacer4"></div>
-      <div class="row">
-        <div class="col">
-          <hr class="underline">
         </div>
       </div>
-      <div class="spacer5"></div>
-      <div class="row">
-        <div class="col-1  bg-theme p-3 pointer">
-          <a>
-            <i class="fa fa-caret-right" aria-hidden="true"></i>
-            Next</a>
+
+      <div class="container fixed-bottom">
+        <div class="row">
+          <div class="col text-primary px-0">
+            <small>STEP 1</small>
+          </div>
         </div>
-        <div class="col ml-auto d-flex justify-content-end">
-          Cancel
+        <div class="row">
+          <div class="col px-0">
+            <div
+              class="step-selector bg-theme p-4 d-flex justify-content-between text-white"
+            >
+              <button
+                class="step step-previous d-flex align-items-center text-center pointer text-white"
+              >
+                <i
+                  class="fa fa-arrow-left mr-2 text-primary"
+                  aria-hidden="true"
+                ></i>
+                <span class="Coralwave1"></span>
+                <span class="Coralwave2"></span>
+                <span class="Coralwave3"></span>
+                <a>Previous Question</a>
+              </button>
+              <button
+                class="step step-next d-flex align-items-center text-center pointer position-relative text-white"
+              >
+                <span class="Coralwave1"></span>
+                <span class="Coralwave2"></span>
+                <span class="Coralwave3"></span>
+                <a>Next Question</a>
+                <i
+                  class="fa fa-arrow-right ml-2 text-primary"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
